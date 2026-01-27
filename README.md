@@ -1,2 +1,3 @@
-# board-game-dev-exercise-checkers
-This contains unit tests that function as checkers of the Lua exercises found in the board-game-dev-lua-exercises repository.
+# board-game-dev-lua-exercises
+
+This contains the Lua exercises and solution checkers of the Board Game Development Course
