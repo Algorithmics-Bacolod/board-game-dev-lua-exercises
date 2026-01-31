@@ -93,13 +93,17 @@ All exercises are board game themed.
     - `difficulty`: A numeric value representing the difficulty level of the event.
 3. Use a `for` loop to iterate over all the `star_system_events`
 4. In each loop iteration:
-    - Print the `description` of the current event.
+    - Print the `description` of the current event using the format: `"Event: " .. event.description`
     - Use branching (`if`, `elseif`, `else`) to handle different event types:
-        - For "combat" events, simulate a combat roll (random number between 1 and 20) and compare it to the event's `difficulty`. Print whether the player succeeded or failed.
-        - For "discovery" events, simulate a discovery roll (random number between 1 and 10) and print a message showing what number was rolled.
-        - For "trade" events, simulate a trade negotiation roll (random number between 1 and 15) and print whether the trade was successful or not.
-    - Print a separator line after each event for clarity.
-5. After the loop, print a message indicating that all events have been resolved and it is the next player's turn to do a star system survey.
+        - For "combat" events, simulate a combat roll (random number between 1 and 20) and compare it to the event's `difficulty`. Print the exact messages:
+            - If successful: `"Combat succeeded with a roll of " .. roll .. "!"`
+            - If failed: `"Combat failed with a roll of " .. roll .. "."`
+        - For "discovery" events, simulate a discovery roll (random number between 1 and 10) and print: `"Discovery roll: " .. roll`
+        - For "trade" events, simulate a trade negotiation roll (random number between 1 and 15) and compare it to the event's `difficulty`. Print the exact messages:
+            - If successful: `"Trade successful with a roll of " .. roll .. "!"`  
+            - If failed: `"Trade failed with a roll of " .. roll .. "."`
+    - Print a separator line after each event for clarity using: `"-------------------------"`
+5. After the loop, print the exact message: `"Star system survey complete."`
 
 ## Exercise 6 - exiting loops early using `break`
 
